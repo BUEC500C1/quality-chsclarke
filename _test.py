@@ -18,3 +18,12 @@ def test_994():
 
 def test_1995():
 	assert convertToRoman.convert(1995) == "MCMXCV"
+
+def test_str():
+	assert convertToRoman.convert("asdf") == -1
+
+def test_bool():
+	assert convertToRoman.convert(True) == -1
+
+def test_bool():
+	assert convertToRoman.convert(1.2) == -1

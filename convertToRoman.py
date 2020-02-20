@@ -4,10 +4,9 @@ romanKey = [(1000, 'M'), (900, 'CM'), (500, 'D'),
             (9, 'IX'), (5, 'V'), (4, 'IV'), 
             (1, 'I')]
 
-
 def convert(arabic):
-
     roman = ''
+    if type(arabic) is not int: return -1
 
     while arabic > 0:
         for a, r in romanKey:
